@@ -8,7 +8,7 @@ import ReactLogo from '../assets/React.png'
 import ReduxLogo from '../assets/Redux.png'
 import Tailwind from '../assets/Tailwind Css.png'
 import NodeLogo from '../assets/NodeLogo.png'
-import Mongodb from '../assets/mongodb.png'
+import Mongodb from "../assets/mongodb.svg"
 import Express from '../assets/Express.png'
 import NextJs from '../assets/NextJs.png'
 
