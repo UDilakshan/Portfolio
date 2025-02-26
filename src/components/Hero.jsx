@@ -1,5 +1,5 @@
 import React from 'react'
-import hero from "../assets/Hero.png"
+import hero from "../assets/HeroOg.png"
 import facebook from "../assets/facebook.png"
 import twitter from "../assets/twitter.png"
 import instagram from "../assets/instagram.png"
@@ -23,6 +23,7 @@ const Hero = () => {
                 </div>
                 <div className='md:w-1/2 flex justify-center items-end'>
                 <img src={hero} alt="" className='lg:h-[90vh] h-96' />
+                {/* <img src={reactLogo} alt="" /> */}
                 </div>
               </div>
     
