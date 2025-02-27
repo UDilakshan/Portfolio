@@ -40,7 +40,7 @@ const Contact = () => {
       )
       .then(
         (response) => {
-          console.log("Email sent successfully!", response);
+          console.log("Email sent to Dilakshan successfully!", response);
           setShowPopup(true); // Show success message
           setTimeout(() => setShowPopup(false), 3000); // Hide after 3s
           setFormData({ name: "", email: "", message: "" }); // Clear form
