@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import Logo from '../assets/Name.png'
 import { Menu, X } from 'lucide-react'
+import { motion } from "framer-motion";
+import { buttonClick, SlideIn200 } from "./animations"
 
 const Navbar = () => {
     const [mobileMenuOpen, setmMobileMenuOpen] = useState(false)
@@ -11,20 +13,20 @@ const Navbar = () => {
             <a href="#" className='mr-6 flex items-center space-x-2'>
                 <img src={Logo} alt="" className='w-36' />
             </a>
-            <nav className='md:flex hidden items-center space-x-6 text-lg font-medium'>
+            <motion.nav {...SlideIn200} className='md:flex hidden items-center space-x-6 text-lg font-medium'>
                 <a href="#about" className='transition-colors hover:text-foreground/80 text-foreground/60'>About</a>
                 <a href="#projects" className='transition-colors hover:text-foreground/80 text-foreground/60'>Projects</a>
                 <a href="#contact" className='transition-colors hover:text-foreground/80 text-foreground/60'>Contact</a>
-            </nav>
+            </motion.nav>
         </div>
-        <button className='inline-flex items-center justify-center rounded-md md:hidden' onClick={()=>setmMobileMenuOpen(!mobileMenuOpen)}>
+        <motion.button {...buttonClick} className='inline-flex items-center justify-center rounded-md md:hidden' onClick={()=>setmMobileMenuOpen(!mobileMenuOpen)}>
            <span className='sr-only'>Open main menu</span>
            {mobileMenuOpen ? (
             <X className='h-6 w-6' aria-hidden="true"/>
            ):(
             <Menu className='h-6 w-6' aria-hidden="true"/>
            )}
-        </button>
+        </motion.button>
       </div>
       {mobileMenuOpen && (
         <div className='md:hidden'>

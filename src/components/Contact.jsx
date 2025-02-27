@@ -5,6 +5,8 @@ import instagram from "../assets/instagram.png";
 import linkedin from "../assets/linkedin.png";
 import Lottie from "lottie-react";
 import contact from "../assets/Contact.json";
+import { motion } from "framer-motion";
+import { buttonClick } from "./animations";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -61,15 +63,16 @@ const Contact = () => {
               I'm always open to new opportunities and collaboration. Feel free to reach out!
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-foreground/60 hover:text-foreground/80">
+              <motion.a {...buttonClick} href="https://web.facebook.com/dilakshan.udhayakumar.9" className="text-foreground/60 hover:text-foreground/80">
                 <img src={facebook} alt="Facebook" className="h-6 w-6" />
-              </a>
-              <a href="#" className="text-foreground/60 hover:text-foreground/80">
+              </motion.a>
+              <motion.a {...buttonClick} href="https://www.instagram.com/udilakshan/" className="text-foreground/60 hover:text-foreground/80">
                 <img src={instagram} alt="Instagram" className="h-6 w-6" />
-              </a>
-              <a href="#" className="text-foreground/60 hover:text-foreground/80">
+              </motion.a>
+
+              <motion.a {...buttonClick} href="https://www.linkedin.com/in/udilakshan/" className="text-foreground/60 hover:text-foreground/80">
                 <img src={linkedin} alt="LinkedIn" className="h-6 w-6" />
-              </a>
+              </motion.a>
             </div>
             <Lottie animationData={contact} className="w-[350px] mx-auto lg:w-[500px]" />
           </div>
@@ -121,9 +124,9 @@ const Contact = () => {
                 className="mt-1 p-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
               />
             </div>
-            <button type="submit" className="bg-red-500 text-white px-3 py-2 rounded-lg">
+            <motion.button {...buttonClick} type="submit" className="bg-red-500 text-white px-3 py-2 rounded-lg">
               Send Message
-            </button>
+            </motion.button>
           </form>
         </div>
       </div>
