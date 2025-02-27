@@ -7,7 +7,6 @@ import linkedin from "../assets/linkedin.png"
 import reactLogo from "../assets/React.png"
 import tailwind from "../assets/Tailwind Css.png"
 import reduxLogo from "../assets/Redux.png"
-import { Link } from 'react-router-dom'
 
 
 const Hero = () => {
@@ -24,7 +23,7 @@ const Hero = () => {
                 </button>
                 </div>
             <div className='md:w-1/2 relative flex justify-center items-end'>
-                 <img src={hero} alt="" className='lg:h-[90vh] h-96' />
+                 <img src={hero} alt="" className='lg:h-[90vh] h-96 brightness-110 grayscale-50 rounded-bl-xl' />
                  <img src={reactLogo} alt="" className='absolute w-10 top-36 left-0 rounded-full md:hidden'/>
                  <img src={reduxLogo} alt="" className='absolute w-10 top-0 right-5 md:hidden'/>
                  <img src={tailwind} alt="" className='absolute w-10 rounded-full right-0 bottom-36 md:hidden'/>
