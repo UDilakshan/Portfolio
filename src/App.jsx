@@ -5,6 +5,7 @@ import Footer from './components/Footer'
 import Contact from './components/Contact'
 import About from './components/About'
 import ParticleBackground from './components/Particle'
+import Projects from './components/Projects'
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <Navbar />
       <Hero />
       <About />
+      <Projects />
       <Contact />
       <Footer/>
     </>

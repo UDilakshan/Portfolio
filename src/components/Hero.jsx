@@ -7,6 +7,7 @@ import linkedin from "../assets/linkedin.png"
 import reactLogo from "../assets/React.png"
 import tailwind from "../assets/Tailwind Css.png"
 import reduxLogo from "../assets/Redux.png"
+import { Link } from 'react-router-dom'
 
 
 const Hero = () => {
@@ -18,8 +19,10 @@ const Hero = () => {
                <h1 className='lg:text-7xl text-2xl font-bold lg:leading-snug'>Hi There, <br />I'm <span className='text-red-500'>Dilakshan</span></h1>
                <p className='md:text-2xl font-semibold text-xl mb-4'>Full stack Developer & Designer</p>
                <p className='mb-4'>I'm a passionate full stack developer with expertise in React, Next.js and modern web technologies.I love creating beautiful and functional web applications that solve real world problems.</p>
-               <button className='bg-black text-white px-3 py-2 w-max rounded-md'><a href="https://drive.google.com/file/d/1LBMHWpTgTGkvCTcHYiU8JQRCHb5-SRl8/view?usp=sharing" download target='_blank'>Download CV</a></button>
-            </div>
+               <button className='bg-black text-white px-3 py-2 w-max rounded-md'>
+                  <a href="/CV.pdf" download="Dilakshan_CV.pdf">Download CV</a>
+                </button>
+                </div>
             <div className='md:w-1/2 relative flex justify-center items-end'>
                  <img src={hero} alt="" className='lg:h-[90vh] h-96' />
                  <img src={reactLogo} alt="" className='absolute w-10 top-36 left-0 rounded-full md:hidden'/>
@@ -29,10 +32,17 @@ const Hero = () => {
         </div>
       </div>
       <div className='absolute top-74 right-10 hidden bg-gray-200 p-4 py-4 md:flex flex-col gap-6 rounded-full'> 
-        <img src={facebook} alt="" className='w-12'/>
-        <img src={instagram} alt="" className='w-12'/>
-        <img src={twitter} alt="" className='w-12'/>
-        <img src={linkedin} alt="" className='w-12'/>
+      <img src={facebook} onClick={() => window.open('https://web.facebook.com/dilakshan.udhayakumar.9', '_blank')}
+        alt="Facebook"  className='w-12 cursor-pointer'/>
+
+        <img src={instagram} onClick={() => window.open('https://www.instagram.com/udilakshan/', '_blank')}
+        alt="Facebook"  className='w-12 cursor-pointer'/>
+
+        <img src={twitter} onClick={() => window.open('https://x.com/udilakshan1', '_blank')}
+        alt="Facebook"  className='w-12 cursor-pointer'/>
+
+        <img src={linkedin} onClick={() => window.open('https://www.linkedin.com/in/udilakshan/', '_blank')}
+        alt="Facebook"  className='w-12 cursor-pointer'/>
       </div>
     </section>
 
