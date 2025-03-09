@@ -21,7 +21,7 @@ const Hero = () => {
                <p className='md:text-2xl font-semibold text-xl mb-4'>Full stack Developer & Designer</p>
                <p className='mb-4'>I'm a passionate full stack developer with expertise in React, Next.js and modern web technologies.I love creating beautiful and functional web applications that solve real world problems.</p>
                <motion.button {...buttonClick} {...SlideInNeg200} className='bg-black text-white px-3 py-2 w-max rounded-md'>
-                  <a href="/CV.pdf" download="Dilakshan_CV.pdf">Download CV</a>
+                  <a href="/CV_Dilakshan.pdf" download="Dilakshan_CV.pdf">Download CV</a>
                 </motion.button>
                 </div>
             <div className='md:w-1/2 relative flex justify-center items-end'>
