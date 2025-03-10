@@ -1,6 +1,6 @@
 
 import React from 'react'
-import SpicyBites from '../assets/SpicyBites.png'
+import PizzaImage from '../assets/PizzaImage.jpeg'
 import Cards from './Cards'
 import { motion } from 'framer-motion'
 
@@ -11,7 +11,7 @@ const Projects = () => {
         {
           title: 'Pizza Ordering System',
           desc: 'It is an amazing online Pizza ordering system for OPizza restaurant.',
-          image: SpicyBites,
+          image: PizzaImage,
           github: "https://github.com/UDilakshan/Pizza_Shop_Project"
         },
       ];
