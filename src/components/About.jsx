@@ -9,7 +9,11 @@ import ReduxLogo from '../assets/Redux.png'
 import Tailwind from '../assets/Tailwind Css.png'
 import NodeLogo from '../assets/NodeLogo.png'
 import Mongodb from "../assets/mongodb.svg"
-import Express from '../assets/Express.png'
+import MySQL from '../assets/MySQL.png'
+import Java from '../assets/Java.svg'
+import Python from '../assets/Python.svg'
+import Spring from '../assets/Spring.svg'
+import firebase from '../assets/firebase.svg'
 import NextJs from '../assets/NextJs.png'
 
 const About = () => {
@@ -21,7 +25,7 @@ const About = () => {
                         <h2 className='text-base text-red-600 font-semibold tracking-wide uppercase'>About Me</h2>
                         <p className='mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl'>Hi, I'm Dilakshan Uthayakumar</p>
                         <p className='mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto'>
-                            A Full-Stack Developer with expertise in web development and the MERN stack.
+                            A Full-Stack Developer with expertise in Web Development, Machine Learning and DataScience.
                         </p>
                     </div>
                     <div className='mt-10'>
@@ -29,7 +33,7 @@ const About = () => {
                             <div>
                                 <h3 className='text-2xl font-semibold text-gray-900'>My Journey</h3>
                                 <p className='mt-4 text-lg text-gray-600'>
-                                I started my journey in web development with a passion for creating intuitive and scalable applications. With proficiency in the MERN stack (MongoDB, Express.js, React, and Node.js), I have built Projects such as a full-stack food ordering website for OPizza restaurant as our 3rd year team software Project, Online multi store, and even some sort of other projects. My projects demonstrate my ability to integrate powerful backend solutions with sleek, user-friendly frontend designs.
+                                I am a Computer Science student at the University of Jaffna, passionate about Web Development, Machine Learning and DataScience. Skilled in programming, network simulation, frontend &backend frameworks, and databases. Strong in projectmanagement and team leadership, with a results-driven approachto software development. Love solving complex problems and eagerto apply my skills to real-world challenges while growing in the techindustry.
                                 </p>
                                 <img src={MernStack} alt="" className='p-2 rounded-lg w-52 mt-4' />
                           </div>
@@ -52,10 +56,7 @@ const About = () => {
                                         <img src={ReactLogo} alt="" className='w-8 rounded-full' />
                                         <span className='font-semibold'>React</span>
                                     </div>
-                                    <div className='border border-red-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-red-300'>
-                                        <img src={ReduxLogo} alt="" className='w-8' />
-                                        <span className='font-semibold'>Redux</span>
-                                    </div>
+                         
                                     <div className='border border-red-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-red-300'>
                                         <img src={Tailwind} alt="" className='w-8 rounded-full' />
                                         <span className='font-semibold'>Tailwind Css</span>
@@ -70,12 +71,28 @@ const About = () => {
                                         <span className='font-semibold'>Mongodb</span>
                                     </div>
                                     <div className='border border-red-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-red-300'>
-                                        <img src={Express} alt="" className='w-10' />
-                                        <span className='font-semibold'>Express Js</span>
+                                        <img src={MySQL} alt="" className='w-10' />
+                                        <span className='font-semibold'>MySQL</span>
                                     </div>
                                     <div className='border border-red-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-red-300'>
                                         <img src={NextJs} alt="" className='w-9' />
                                         <span className='font-semibold'>Next Js</span>
+                                    </div>
+									<div className='border border-red-300 flex items-center w-max h-12 px-2 py-1 rounded-lg shadow-md shadow-red-300'>
+                                        <img src={Java} alt="" className='w-11' />
+                                        <span className='font-semibold'>Java</span>
+                                    </div>
+									<div className='border border-red-300 flex items-center  w-max px-2 py-1 rounded-lg shadow-md shadow-red-300'>
+                                        <img src={Spring} alt="" className='w-8 mr-2' />
+                                        <span className='font-semibold'>Spring</span>
+                                    </div>
+									<div className='border border-red-300 flex items-center  w-max px-2 py-1 rounded-lg shadow-md shadow-red-300'>
+                                        <img src={Python} alt="" className='w-8 mr-2' />
+                                        <span className='font-semibold'>Python</span>
+                                    </div>
+									<div className='border border-red-300 flex items-center  w-max px-2 py-1 rounded-lg shadow-md shadow-red-300'>
+                                        <img src={firebase} alt="" className='w-8' />
+                                        <span className='font-semibold'>Firebase</span>
                                     </div>
                                 </div>
                             </div>
