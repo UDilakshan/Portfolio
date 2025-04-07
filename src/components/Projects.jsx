@@ -1,6 +1,7 @@
 
 import React from 'react'
 import PizzaImage from '../assets/PizzaImage.jpeg'
+import XClone from '../assets/XClone.png'
 import Cards from './Cards'
 import { motion } from 'framer-motion'
 
@@ -14,6 +15,14 @@ const Projects = () => {
           image: PizzaImage,
           github: "https://github.com/UDilakshan/Pizza_Shop_Project"
         },
+		
+		{
+          title: 'Twitter (X app) clone Project',
+          desc: 'Twitter app has been cloned using NextJs and imagekit.io.',
+          image: XClone,
+          github: "https://github.com/UDilakshan/Cloning-X_app"
+        },
+		
       ];
 
   return (
